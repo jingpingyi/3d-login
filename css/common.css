@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body, main {
+	height: 100%;
+}
+a {
+	text-decoration: none;
+}
+header {
+	position:absolute;
+	top: 20px;
+	right: 20px;
+}
+.flip-modal {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	border: 1px solid grey;
+}
+.flip-modal.login .modal-login,
+.flip-modal.register .modal-register {
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+	transition: all 1s;
+}
+.flip-modal.login .modal-register,
+.flip-modal.register .modal-login {
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: all 1s;
+}
