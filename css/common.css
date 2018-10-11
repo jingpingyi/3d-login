@@ -25,13 +25,22 @@ header {
 }
 .flip-modal.login .modal-login,
 .flip-modal.register .modal-register {
-	transform: rotateY(0deg);
+	transform: rotateY(0deg) translate(-50%,-50%);
 	backface-visibility: hidden;
 	transition: all 1s;
 }
 .flip-modal.login .modal-register,
 .flip-modal.register .modal-login {
-	transform: rotateY(180deg);
+	transform: rotateY(180deg) translate(-50%,-50%);
 	backface-visibility: hidden;
 	transition: all 1s;
+}
+.tabs {
+	text-align: center;
+}
+.tabs a {
+	display: inline-block;
+}
+.active {
+	border-bottom: 1px solid;
 }
