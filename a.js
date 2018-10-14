@@ -14,3 +14,6 @@ $('.flip-modal').addEventListener('click', function(e){
 		$('.flip-modal').classList.remove('login')
 	}
 })
+$('header .login').onclick = function(){
+	$('.flip-modal').style.display = 'block';
+}

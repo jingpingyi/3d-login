@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<title>3D登陆框</title>
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="https://www.unpgk.com/font-awesome@4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<header><a href="#"><i class="fa fa-user-o"></i></a></header>
+	<header><a href="#" class="login"><i class="fa fa-user-circle"></i></a></header>
 	<main>
 		<div class="flip-modal login">
 
@@ -19,20 +19,22 @@
 					<a href="#" class="login active">登陆</a>
 					<a href="#" class="register">注册</a>
 				</div>
-				<div class="errmsg"></div>
-				<form action="/login" method="post">
-					<div class="input-field">
-						<input type="text" name="username" placeholder="用户名">
-						<i class="fa fa-user"></i>
-					</div>
-					<div class="input-field">
-						<input type="text" name="password" placeholder="密码">
-						<i class="fa fa-lock"></i>
-					</div>
-					<div class="input-field">
-						<input type="submit" value="登陆">
-					</div>
-				</form>
+				<div class="content">
+					<div class="errmsg"></div>
+					<form action="/login" method="post">
+						<div class="input-field">
+							<input type="text" name="username" placeholder="用户名">
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="input-field">
+							<input type="text" name="password" placeholder="密码">
+							<i class="fa fa-lock"></i>
+						</div>
+						<div class="input-field">
+							<input type="submit" value="登陆">
+						</div>
+					</form>
+				</div>
 			</div>
 			
 			<div class="modal modal-register">
@@ -43,24 +45,26 @@
 				<a href="#" class="login">登陆</a>
 				<a href="#" class="register active">注册</a>
 			</div>
-			<div class="errmsg"></div>
-			<form action="/register" method="psot">
-				<div class="input-field">
-					<input type="text" name="username" placeholder="用户名">
-					<i class="fa fa-user"></i>
-				</div>
-				<div class="input-field">
-					<input type="password" name="password" placeholder="请输入密码">
-					<i class="fa fa-lock"></i> 
-				</div>
-				<div class="input-field">
-					<input type="password" name="password2" placeholder="请再次输入密码">
-					<i class="fa fa-lock"></i>
-				</div>
-				<div class="input-field">
-					<input type="submit" value="注册">
-				</div>
-			</form>
+			<div class="content">
+				<div class="errmsg"></div>
+				<form action="/register" method="psot">
+					<div class="input-field">
+						<input type="text" name="username" placeholder="用户名">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="input-field">
+						<input type="password" name="password" placeholder="请输入密码">
+						<i class="fa fa-lock"></i> 
+					</div>
+					<div class="input-field">
+						<input type="password" name="password2" placeholder="请再次输入密码">
+						<i class="fa fa-lock"></i>
+					</div>
+					<div class="input-field">
+						<input type="submit" value="注册">
+					</div>
+				</form>
+			</div>
 			</div>
 		</div>
 
